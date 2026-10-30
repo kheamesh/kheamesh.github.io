@@ -2,7 +2,7 @@ class AppStrings {
   // Profile
   static const String name = "Kheamesh Soni";
   static const String role = "Flutter Developer | Mobile & Web Application Developer";
-  static const String shortIntro = "Building scalable, beautiful and high-performance applications with Flutter.";
+  static const String shortIntro = "Building scalable, beautiful and high-performance applications with Flutttttttter.";
   static const String aboutSummary = "I am a passionate Flutter Developer with a strong foundation in building cross-platform applications. My focus is on creating clean, intuitive user experiences and writing maintainable, high-quality code. I love solving complex problems and turning ideas into reality through technology.";
   static const String email = "kheamesh.soni@example.com";
   static const String github = "https://github.com/Weingeniouss";
