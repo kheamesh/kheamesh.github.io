@@ -290,7 +290,7 @@ class _FeaturedProjectCard extends StatelessWidget {
             children: [
               if (project.githubUrl != null)
                 IconButton(
-                  icon: const Icon(AppIcons.github),
+                  icon: Icon(AppIcons.github),
                   tooltip: AppStrings.viewOnGithub,
                   onPressed: () {
                     launchUrl(Uri.parse(project.githubUrl!));
@@ -312,11 +312,7 @@ class _FeaturedProjectCard extends StatelessWidget {
                     launchUrl(Uri.parse(url));
                   }
                 },
-                icon: const Icon(
-                  AppIcons.github,
-                  size: 16,
-                  color: AppColors.gold,
-                ),
+                icon: Icon(AppIcons.github, size: 16, color: AppColors.gold),
                 label: Text(
                   AppStrings.viewCaseStudy,
                   style: TextStyle(
