@@ -39,9 +39,7 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: |
-          flutter pub upgrade font_awesome_flutter
-          flutter pub get
+        run: flutter pub get
 
       # Build Flutter Web
       - name: Build Flutter Web
