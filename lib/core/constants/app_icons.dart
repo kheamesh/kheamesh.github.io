@@ -20,12 +20,12 @@ class AppIcons {
   static const IconData navigateNext = Icons.navigate_next;
 
   // Socials & Identity
-  static const IconData github = FontAwesomeIcons.github;
-  static const IconData linkedin = FontAwesomeIcons.linkedin;
+  static const FaIconData github = FontAwesomeIcons.github;
+  static const FaIconData linkedin = FontAwesomeIcons.linkedin;
   static const IconData email = Icons.email;
   static const IconData location = Icons.location_on;
-  static const IconData gitAlt = FontAwesomeIcons.gitAlt;
-  static const IconData figma = FontAwesomeIcons.figma;
+  static const FaIconData gitAlt = FontAwesomeIcons.gitAlt;
+  static const FaIconData figma = FontAwesomeIcons.figma;
 
   // Technical / Skills
   static const IconData flutter = Icons.flutter_dash;

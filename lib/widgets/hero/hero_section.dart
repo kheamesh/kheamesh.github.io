@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../core/constants/app_icons.dart';
@@ -347,7 +348,7 @@ class HeroSection extends StatelessWidget {
 }
 
 class _SocialIcon extends StatelessWidget {
-  final IconData icon;
+  final dynamic icon;
   final String url;
 
   const _SocialIcon({required this.icon, required this.url});
@@ -358,11 +359,17 @@ class _SocialIcon extends StatelessWidget {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () => launchUrl(Uri.parse(url)),
-        child: Icon(
-          icon,
-          color: Theme.of(context).colorScheme.onSurfaceVariant,
-          size: 24,
-        ),
+        child: icon is FaIconData
+            ? FaIcon(
+                icon,
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+                size: 24,
+              )
+            : Icon(
+                icon as IconData,
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+                size: 24,
+              ),
       ),
     );
   }

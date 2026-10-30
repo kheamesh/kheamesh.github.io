@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import '../../core/constants/app_text_sizes.dart';
 import '../../core/theme/app_colors.dart';
@@ -270,7 +271,10 @@ class SkillsSection extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (app_icon != null) Icon(app_icon, size: 18, color: brandColor),
+          if (app_icon != null)
+            app_icon is FaIconData
+                ? FaIcon(app_icon, size: 18, color: brandColor)
+                : Icon(app_icon as IconData, size: 18, color: brandColor),
           SizedBox(width: Get.width * 0.008),
           Text(
             skill.name,

@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 
 class Skill {
   final String name;
-  final IconData? icon;
+  final dynamic icon;
   final String? iconPath; // For SVG/Image icons
 
   Skill({

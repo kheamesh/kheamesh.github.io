@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../core/constants/app_icons.dart';
@@ -290,7 +291,7 @@ class _FeaturedProjectCard extends StatelessWidget {
             children: [
               if (project.githubUrl != null)
                 IconButton(
-                  icon: Icon(AppIcons.github),
+                  icon: const FaIcon(AppIcons.github),
                   tooltip: AppStrings.viewOnGithub,
                   onPressed: () {
                     launchUrl(Uri.parse(project.githubUrl!));
@@ -312,7 +313,11 @@ class _FeaturedProjectCard extends StatelessWidget {
                     launchUrl(Uri.parse(url));
                   }
                 },
-                icon: Icon(AppIcons.github, size: 16, color: AppColors.gold),
+                icon: const FaIcon(
+                  AppIcons.github,
+                  size: 16,
+                  color: AppColors.gold,
+                ),
                 label: Text(
                   AppStrings.viewCaseStudy,
                   style: TextStyle(
