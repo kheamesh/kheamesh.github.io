@@ -251,7 +251,7 @@ class HeroSection extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.gold,
             foregroundColor: AppColors.black,
-            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 22),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
             ),
@@ -277,7 +277,7 @@ class HeroSection extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.goldAccent,
             foregroundColor: AppColors.black,
-            padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 22),
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
             ),
@@ -310,7 +310,7 @@ class HeroSection extends StatelessWidget {
             style: OutlinedButton.styleFrom(
               foregroundColor: Theme.of(context).textTheme.bodyLarge?.color,
               side: const BorderSide(color: AppColors.gold),
-              padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 22),
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),

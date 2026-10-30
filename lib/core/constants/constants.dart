@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppConstants {
-  static const double desktopPadding = 20.0;
-  static const double tabletPadding = 14.0;
-  static const double mobilePadding = 10.0;
+  static const double desktopPadding = 10.0;
+  static const double tabletPadding = 8.0;
+  static const double mobilePadding = 6.0;
 
   static const double maxContentWidth = 1450.0;
 

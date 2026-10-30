@@ -137,8 +137,8 @@ class AboutSection extends StatelessWidget {
                 backgroundColor: AppColors.gold,
                 foregroundColor: AppColors.black,
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 18,
+                  horizontal: 16,
+                  vertical: 16,
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
@@ -159,8 +159,8 @@ class AboutSection extends StatelessWidget {
                 foregroundColor: Theme.of(context).textTheme.bodyLarge?.color,
                 side: const BorderSide(color: AppColors.gold),
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 18,
+                  horizontal: 16,
+                  vertical: 16,
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
